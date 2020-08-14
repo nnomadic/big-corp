@@ -69,6 +69,11 @@
 
   &__img {
     margin-right: 50px;
+    margin-bottom: 20px;
+
+    @include lg {
+        margin-bottom: auto;
+    }
   }
 }
 </style>
