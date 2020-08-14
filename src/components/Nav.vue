@@ -61,7 +61,7 @@ export default {
   z-index: 2;
   position: fixed;
   top: 0;
-  width: -webkit-fill-available;
+  width: inherit;
 
   &__item {
     margin-right: 10px;

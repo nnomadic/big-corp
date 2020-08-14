@@ -2,20 +2,29 @@
   <div class="glide multi1">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
-        <li class="glide__slide">1</li>
-        <li class="glide__slide">2</li>
+        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
+</li>
+        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
+</li>
+        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
+</li>
+        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
+</li>
+        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
+</li>
+        <!-- <li class="glide__slide">2</li>
         <li class="glide__slide">3</li>
         <li class="glide__slide">4</li>
         <li class="glide__slide">5</li>
-        <li class="glide__slide">6</li>
+        <li class="glide__slide">6</li> -->
       </ul>
     </div>
     <div class="glide__arrows" data-glide-el="controls">
       <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-        prev
+        <img src="@/assets/chevron.png" alt="Left Arrow" class="arrow left" />
       </button>
       <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-        next
+        <img src="@/assets/chevron.png" alt="Right Arrow" class="arrow right" />
       </button>
     </div>
   </div>
@@ -35,3 +44,17 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.arrow {
+  max-width: 30px;
+  max-height: 40px;
+
+  &.left {
+    transform: rotate(90deg);
+  }
+  &.right {
+    transform: rotate(-90deg);
+  }
+}
+</style>
