@@ -1,5 +1,3 @@
-@import "_variables.scss";
-
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
@@ -40,8 +38,6 @@ body {
 
 p {
   margin: 0;
-  // line-height: 1.2rem;
-  // font-size: 1.6rem;
 }
 
 a {
@@ -70,23 +66,6 @@ button {
   background-color: $primary;
 }
 
-.glide__track {
-  // width: 80%;
-
-  @include lg {
-    width: 77%;
-    margin-left: 13%;
-  }
-}
-
-.glide__arrow {
-    border: none;
-}
-.glide__slide {
-  margin: 0;
-  text-align: center;
-}
-
 .modal-mask {
   position: fixed;
   z-index: 99;
@@ -100,9 +79,7 @@ button {
 
 .modal-wrapper {
   display: flex;
-  //   margin-top: 150px;
   vertical-align: middle;
-  //   overflow: scroll;
 
   @include lg {
     margin-top: 150px;
@@ -110,16 +87,13 @@ button {
 }
 
 .modal-container {
-  //   width: 1200px;
   max-width: 80%;
-  //   height: 800px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: $white;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
-  //   font-family: Helvetica, Arial, sans-serif;
   display: flex;
   flex-flow: column;
   justify-content: space-between;

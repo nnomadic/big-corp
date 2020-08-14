@@ -26,9 +26,6 @@
 .footer {
   width: inherit;
   background-color: $secondary;
-  // position: fixed;
-  //   bottom: 0;
-  //   height: 250px;
 
   @include lg {
     position: absolute;

@@ -71,10 +71,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import "@/styles/_colours.scss";
-
 .accordion {
-  // display: flex;
   margin-left: 10px;
   margin-top: 50px;
 

@@ -86,13 +86,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import "@/styles/_media.scss";
-
 .nav {
-//   display: flex;
-//   align-content: center;
-//   justify-content: space-between;
-//   padding: 10px;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -127,7 +121,7 @@ export default {
     padding: 10px;
 
     .login_btn {
-        margin-right: 20px;
+      margin-right: 20px;
     }
   }
 }

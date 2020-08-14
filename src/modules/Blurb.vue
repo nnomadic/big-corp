@@ -59,7 +59,6 @@
 
 <style lang="scss" scoped>
 .blurb {
-//   display: flex;
   margin: 40px;
   margin-bottom: 100px;
 
@@ -72,7 +71,7 @@
     margin-bottom: 20px;
 
     @include lg {
-        margin-bottom: auto;
+      margin-bottom: auto;
     }
   }
 }

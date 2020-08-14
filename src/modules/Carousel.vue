@@ -21,7 +21,6 @@
     </div>
     <div class="glide__arrows" data-glide-el="controls">
       <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-        <!-- <img src="@/assets/chevron.png" alt="Left Arrow" class="arrow left" /> -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 256 256"
@@ -33,7 +32,6 @@
         </svg>
       </button>
       <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-        <!-- <img src="@/assets/chevron.png" alt="Right Arrow" class="arrow right" /> -->
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 256 256"
@@ -86,5 +84,20 @@ export default {
   &.right {
     transform: rotate(-90deg);
   }
+}
+
+.glide__track {
+  @include lg {
+    width: 77%;
+    margin-left: 13%;
+  }
+}
+
+.glide__arrow {
+  border: none;
+}
+.glide__slide {
+  margin: 0;
+  text-align: center;
 }
 </style>
