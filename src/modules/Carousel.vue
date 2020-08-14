@@ -38,6 +38,14 @@ export default {
       type: "carousel",
       autoplay: 3500,
       perView: 4,
+      breakpoints: {
+        768: {
+          perView: 1,
+        },
+        992: {
+          perView: 2,
+        },
+      },
     });
 
     glideMulti1.mount();

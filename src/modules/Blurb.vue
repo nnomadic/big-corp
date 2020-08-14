@@ -59,8 +59,13 @@
 
 <style lang="scss" scoped>
 .blurb {
-  display: flex;
+//   display: flex;
   margin: 40px;
+  margin-bottom: 100px;
+
+  @include lg {
+    display: flex;
+  }
 
   &__img {
     margin-right: 50px;

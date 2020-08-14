@@ -34,6 +34,8 @@
 
   &__link-lockup {
     display: grid;
+    align-content: space-around;
+    text-align: center;
   }
 }
 </style>

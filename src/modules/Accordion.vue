@@ -1,6 +1,6 @@
 <template>
   <div class="accordion">
-    <div>
+    <div class="accordion__btn-lockup">
       <div
         class="accordion__btn btn"
         @click="setAccordion(0)"
@@ -71,19 +71,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/styles/_colours.scss";
+// @import "@/styles/_colours.scss";
 
 .accordion {
-  display: flex;
+  // display: flex;
   margin-left: 10px;
+  margin-top: 50px;
+
+  @include lg {
+    display: flex;
+  }
+
+  &__btn-lockup {
+    display: flex;
+    justify-content: space-around;
+
+    @include lg {
+      display: block;
+    }
+  }
 
   &__btn {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 150px;
-    height: 50px;
+    width: 70px;
+    height: 30px;
     background-color: $secondary;
+
+    @include lg {
+      width: 150px;
+      height: 50px;
+    }
 
     &.active {
       background-color: $primary;
@@ -91,7 +110,7 @@ export default {
   }
 
   &__selection {
-    padding: 50px;
+    padding: 30px;
   }
 }
 </style>

@@ -1,5 +1,4 @@
-@import "_colours.scss";
-@import "_media.scss";
+@import "_variables.scss";
 
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
@@ -15,15 +14,34 @@ body {
   vertical-align: baseline;
   scroll-behavior: smooth;
   background-color: $white;
+  height: 100%;
 }
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 1500px;
-  margin: 0 auto;
-  min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+
+    @include lg {
+        min-height: 100vh;
+        padding-bottom: 150px;
+        width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+p {
+    margin: 0;
+    // line-height: 1.2rem;
+    // font-size: 1.6rem;
 }
 
 .header {
@@ -35,19 +53,29 @@ body {
   margin: 55px auto;
 
   img {
-    max-width: 600px;
-    max-height: 250px;
+    max-width: 250px;
+    max-height: 150px;
+    @include lg {
+        max-width: 600px;
+        max-height: 250px;
+    }
+
   }
 }
 
 .footer {
   width: inherit;
-  height: 150px;
   background-color: $secondary;
-  //   position: fixed;
+    // position: fixed;
   //   bottom: 0;
-  position: relative;
-  bottom: 0;
+  
+
+  @include lg {
+    position: absolute;
+    bottom: 0;
+  height: 150px;
+
+  }
 }
 
 button {

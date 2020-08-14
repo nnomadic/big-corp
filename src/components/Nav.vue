@@ -50,6 +50,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/_media.scss";
+
 .nav {
   display: flex;
   align-content: center;
@@ -59,6 +61,9 @@ export default {
   position: fixed;
   top: 0;
   width: inherit;
+
+  @include lg {
+  }
 
   &__item {
     margin-right: 10px;
