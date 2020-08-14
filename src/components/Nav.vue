@@ -13,7 +13,7 @@
         >
       </div>
       <div>
-        <button class="btn" @click="showLoginModal = true">
+        <button class="btn login_btn" @click="showLoginModal = true">
           Login
         </button>
       </div>
@@ -78,7 +78,7 @@ export default {
   data() {
     return {
       showLoginModal: false,
-      menuOpen: false
+      menuOpen: false,
     };
   },
   components: {},
@@ -89,10 +89,10 @@ export default {
 // @import "@/styles/_media.scss";
 
 .nav {
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-  padding: 10px;
+//   display: flex;
+//   align-content: center;
+//   justify-content: space-between;
+//   padding: 10px;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -100,6 +100,10 @@ export default {
 
   &__item {
     margin-right: 10px;
+  }
+
+  .modal-wrapper {
+    margin-top: 50px;
   }
 
   .modal-body {
@@ -117,6 +121,14 @@ export default {
   display: none;
   @include lg {
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    padding: 10px;
+
+    .login_btn {
+        margin-right: 20px;
+    }
   }
 }
 

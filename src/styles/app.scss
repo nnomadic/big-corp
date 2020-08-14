@@ -45,8 +45,8 @@ p {
 }
 
 a {
-    text-decoration: none;
-    font-size: 1.2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 button {
@@ -70,6 +70,18 @@ button {
   background-color: $primary;
 }
 
+.glide__track {
+  // width: 80%;
+
+  @include lg {
+    width: 77%;
+    margin-left: 13%;
+  }
+}
+
+.glide__arrow {
+    border: none;
+}
 .glide__slide {
   margin: 0;
   text-align: center;
@@ -88,8 +100,13 @@ button {
 
 .modal-wrapper {
   display: flex;
-  margin-top: 150px;
+  //   margin-top: 150px;
   vertical-align: middle;
+  //   overflow: scroll;
+
+  @include lg {
+    margin-top: 150px;
+  }
 }
 
 .modal-container {
@@ -106,6 +123,8 @@ button {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  overflow: scroll;
+  max-height: 90vh;
 }
 
 .modal-body {

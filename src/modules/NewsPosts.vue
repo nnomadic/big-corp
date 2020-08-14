@@ -102,12 +102,17 @@ export default {
   margin: 0 auto;
 
   &__title {
-    width: 1000px;
-    height: 100px;
+    width: 100%;
+    min-height: 50px;
     margin: 25px auto;
     display: block;
     text-align: left;
     text-transform: capitalize;
+
+    @include lg {
+      width: 1000px;
+      height: 100px;
+    }
   }
 }
 

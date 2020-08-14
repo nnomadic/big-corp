@@ -28,7 +28,7 @@
   background-color: $secondary;
   // position: fixed;
   //   bottom: 0;
-//   height: 250px;
+  //   height: 250px;
 
   @include lg {
     position: absolute;
@@ -43,6 +43,11 @@
 
   &__text {
     max-width: 350px;
+    margin: 0 auto;
+
+    @include lg {
+      margin: 25px;
+    }
   }
 
   &__link-lockup {
@@ -50,12 +55,12 @@
     align-content: space-around;
     text-align: center;
 
-    a{
-        margin-bottom: 10px;
+    a {
+      margin-bottom: 10px;
 
-        @include lg {
-            margin-bottom: auto;
-        }
+      @include lg {
+        margin-bottom: auto;
+      }
     }
   }
 }
