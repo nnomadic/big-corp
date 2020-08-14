@@ -2,21 +2,21 @@
   <div class="glide multi1">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
-        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
-</li>
-        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
-</li>
-        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
-</li>
-        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
-</li>
-        <li class="glide__slide"> <img src="https://picsum.photos/300/200" />
-</li>
-        <!-- <li class="glide__slide">2</li>
-        <li class="glide__slide">3</li>
-        <li class="glide__slide">4</li>
-        <li class="glide__slide">5</li>
-        <li class="glide__slide">6</li> -->
+        <li class="glide__slide">
+          <img src="https://picsum.photos/300/200" />
+        </li>
+        <li class="glide__slide">
+          <img src="https://picsum.photos/300/200" />
+        </li>
+        <li class="glide__slide">
+          <img src="https://picsum.photos/300/200" />
+        </li>
+        <li class="glide__slide">
+          <img src="https://picsum.photos/300/200" />
+        </li>
+        <li class="glide__slide">
+          <img src="https://picsum.photos/300/200" />
+        </li>
       </ul>
     </div>
     <div class="glide__arrows" data-glide-el="controls">

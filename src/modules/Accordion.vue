@@ -23,7 +23,9 @@
         Accordion 3
       </div>
     </div>
-    <div class="accordion__selection">{{ currentSelection }}</div>
+    <div class="accordion__selection">
+      <p>{{ currentSelection }}</p>
+    </div>
   </div>
 </template>
 
@@ -88,7 +90,7 @@ export default {
     }
   }
 
-  &__selection{
+  &__selection {
     padding: 50px;
   }
 }

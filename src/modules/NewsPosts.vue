@@ -1,8 +1,13 @@
 <template>
-  <div>
-    <div v-for="post in posts" :key="post.id" @click="openModal(post.id)">
+  <div class="news-posts">
+    <button
+      v-for="post in posts"
+      :key="post.id"
+      @click="openModal(post.id)"
+      class="news-posts__title btn"
+    >
       {{ post.title }}
-    </div>
+    </button>
 
     <div id="modal" v-if="showModal">
       <transition name="modal">
@@ -10,16 +15,23 @@
           <div class="modal-wrapper">
             <div class="modal-container">
               <div class="modal-body" v-if="modalPost">
-                {{ modalPost.body }}
+                <h3>
+                  {{ modalPost.body }}
+                </h3>
               </div>
               <div class="modal-footer" v-if="modalComments">
-                <div v-for="comment in modalComments" :key="comment.id">
-                  {{ comment.name }}
-                  {{ comment.email }}
-                  {{ comment.body }}
+                <div
+                  v-for="comment in modalComments"
+                  :key="comment.id"
+                  class="comment"
+                >
+                  <h4>{{ comment.name }} | {{ comment.email }}</h4>
+                  <p>
+                    {{ comment.body }}
+                  </p>
                 </div>
-                <button class="modal-default-button" @click="showModal = false">
-                  OK
+                <button class="btn" @click="showModal = false">
+                  Close
                 </button>
               </div>
             </div>
@@ -83,5 +95,27 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/_colours.scss";
 
+.news-posts {
+  display: inline-block;
+  margin: 0 auto;
+
+  &__title {
+    width: 1000px;
+    height: 100px;
+    margin: 25px auto;
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+  }
+}
+
+.comment {
+  display: inline-block;
+  width: 95%;
+  margin: 10px;
+  padding: 10px;
+  background-color: $secondary;
+}
 </style>
