@@ -21,6 +21,7 @@
         </button>
       </div>
     </div>
+    <accordion></accordion>
   </div>
 </template>
 
