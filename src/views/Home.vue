@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    Homepage
     <Carousel></Carousel>
     <Accordion></Accordion>
     <Blurb></Blurb>

@@ -1,8 +1,12 @@
 <template>
-  <nav id="nav">
+  <nav id="nav" class="nav">
     <div>
-      <router-link to="/"><button class="btn">Home</button></router-link>
-      <router-link to="/news"><button class="btn">News</button></router-link>
+      <router-link to="/"
+        ><button class="btn nav__item">Home</button></router-link
+      >
+      <router-link to="/news"
+        ><button class="btn nav__item">News</button></router-link
+      >
       <router-link to="/contact"
         ><button class="btn">Contact</button></router-link
       >
@@ -47,3 +51,20 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.nav {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+
+  &__item {
+    margin-right: 10px;
+  }
+}
+</style>

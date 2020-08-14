@@ -1,6 +1,5 @@
 <template>
   <div class="about">
-    News
     <NewsPosts></NewsPosts>
   </div>
 </template>

@@ -1,4 +1,5 @@
 @import "_colours.scss";
+@import "_media.scss";
 
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
@@ -13,6 +14,7 @@ body {
   font: inherit;
   vertical-align: baseline;
   scroll-behavior: smooth;
+  background-color: $white;
 }
 
 #app {
@@ -22,9 +24,17 @@ body {
 }
 
 .header {
-  width: 100vw;
-  height: 250px;
-  background-color: $primary;
+  min-width: 100vw;
+  max-height: 250px;
+//   background-color: $primary;
+display: flex;
+align-items: center;
+justify-content: center;
+
+img{
+    max-width: 600px;
+    max-height: 250px;
+}
 }
 
 .footer {
@@ -53,7 +63,7 @@ button {
   border-radius: 4px;
   padding: 0.5em 1em;
   color: #ffffff;
-  background-color: $secondary;
+  background-color: $primary;
 }
 
 .glide__slide {
