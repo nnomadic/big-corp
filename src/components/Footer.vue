@@ -10,6 +10,7 @@
       <a href="#">Link 5</a>
       <a href="#">Link 6</a>
     </div>
+
     <div class="footer__text">
       <p>
         Et sint quis ea enim in consectetur cillum ipsum Lorem officia excepteur
@@ -23,9 +24,21 @@
 
 <style lang="scss" scoped>
 .footer {
-  display: flex;
-  align-content: flex-start;
-  justify-content: space-around;
+  width: inherit;
+  background-color: $secondary;
+  // position: fixed;
+  //   bottom: 0;
+//   height: 250px;
+
+  @include lg {
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+  }
+
   padding: 30px;
 
   &__text {
@@ -36,6 +49,14 @@
     display: grid;
     align-content: space-around;
     text-align: center;
+
+    a{
+        margin-bottom: 10px;
+
+        @include lg {
+            margin-bottom: auto;
+        }
+    }
   }
 }
 </style>

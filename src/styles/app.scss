@@ -24,58 +24,29 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 100%;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
 
-    @include lg {
-        min-height: 100vh;
-        padding-bottom: 150px;
-        width: 1500px;
-        margin: 0 auto;
-    }
+  @include lg {
+    min-height: 100vh;
+    padding-bottom: 150px;
+    width: 1500px;
+    margin: 0 auto;
+  }
 }
 
 p {
-    margin: 0;
-    // line-height: 1.2rem;
-    // font-size: 1.6rem;
+  margin: 0;
+  // line-height: 1.2rem;
+  // font-size: 1.6rem;
 }
 
-.header {
-  min-width: inherit;
-  max-height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 55px auto;
-
-  img {
-    max-width: 250px;
-    max-height: 150px;
-    @include lg {
-        max-width: 600px;
-        max-height: 250px;
-    }
-
-  }
-}
-
-.footer {
-  width: inherit;
-  background-color: $secondary;
-    // position: fixed;
-  //   bottom: 0;
-  
-
-  @include lg {
-    position: absolute;
-    bottom: 0;
-  height: 150px;
-
-  }
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 button {
@@ -122,16 +93,16 @@ button {
 }
 
 .modal-container {
-//   width: 1200px;
-max-width: 80%;
-//   height: 800px;
+  //   width: 1200px;
+  max-width: 80%;
+  //   height: 800px;
   margin: 0px auto;
   padding: 20px 30px;
   background-color: $white;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
-//   font-family: Helvetica, Arial, sans-serif;
+  //   font-family: Helvetica, Arial, sans-serif;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
