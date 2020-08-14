@@ -27,10 +27,7 @@
                 <input placeholder="Password" />
               </div>
               <div class="modal-footer">
-                <button
-                  class="modal-default-button"
-                  @click="showLoginModal = false"
-                >
+                <button class="btn" @click="showLoginModal = false">
                   Sign in
                 </button>
               </div>
@@ -65,6 +62,16 @@ export default {
 
   &__item {
     margin-right: 10px;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-flow: column;
+
+    input {
+      height: 25px;
+      margin: 10px auto;
+    }
   }
 }
 </style>
